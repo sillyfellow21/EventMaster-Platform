@@ -44,3 +44,24 @@ EventMaster-Platform/
 ├── styles.css               # Global stylesheet
 ├── ticket.php               # Ticket generation logic
 └── ...other utility files
+## 🚀 Installation & Setup
+
+To run this project locally, you will need a local server environment like **XAMPP**, **WAMP**, or **MAMP**.
+
+1. **Clone the repository:** Run `git clone https://github.com/sillyfellow21/EventMaster-Platform.git` in your terminal.
+2. **Move to local server directory:** Place the cloned folder into your server's root directory (`htdocs` for XAMPP or `www` for WAMP).
+3. **Access Database Manager:** Open your local PHPMyAdmin interface (usually at `http://localhost/phpmyadmin`).
+4. **Create Database:** Create a new database named `eventms`.
+5. **Import Schema:** Import the provided SQL file (`eventms.sql` or `dbb.sql`) into the newly created database.
+6. **Configure Connection:** Open `db_connect.php` and verify that the database credentials match your local setup (e.g., username `root`, no password).
+7. **Run the Application:** Open your web browser and navigate to `http://localhost/EventMaster-Platform/Index.html`.
+
+## 💡 Usage Workflow
+
+* **New Users:** Start by navigating to the sign-up page to create an account as either a Guest or a Manager.
+* **Managers:** Log in, access the Manager Dashboard, and begin creating new events with specific dates, descriptions, and capacities.
+* **Guests:** Log in, browse the active events listing, register for an event you wish to attend, and retrieve your digital ticket.
+
+## 🎓 Academic Context
+
+This repository represents academic coursework for **CSE370** at **BRAC University**. The project emphasizes the practical application of database schema design, normalization, CRUD operations, and connecting frontend interfaces with a relational database via PHP.
